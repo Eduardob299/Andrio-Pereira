@@ -1,0 +1,337 @@
+/* ------------------------------
+   Estilos Gerais
+------------------------------ */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-image: url("../img/compressed_Fundo padrão dos Slides Andrio Pereira.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+a {
+  color: #603a12;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   Cabeçalho
+------------------------------ */
+header {
+  background: linear-gradient(rgba(209, 188, 148, 0.8), rgba(0, 0, 0, 0.7)),
+              url("../img/Fundo padrão dos Slides Andrio Pereira.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 64px 28px;
+}
+
+
+
+header h1 {
+  font-size: 44px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+/*h1 e h3 com letras legiveis e com profundidade*/
+header h3 {
+  font-size: 32px;
+  text-decoration: underline;
+  color: #f4e6ce;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+header p {
+  font-size: 21px;
+  font-style: italic;
+}
+
+.btn-header {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background-color: #3e2f20;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+/* os .btn aqui servem para o botao "quero trasnf meu negocio*/
+.btn-header:hover {
+  background-color: #3e2f20;
+  transform: scale(1.05);
+}
+
+
+/* ------------------------------
+   Navegação
+------------------------------ */
+nav {
+  background-color: #3e2f20;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 16px;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 24px;
+}
+
+nav a {
+  color: #f9f1e3;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ebc253;
+}
+
+/* ------------------------------
+   Conteúdo Principal
+------------------------------ */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 32px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+}
+
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 28px;
+  color: #3b2a1a;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 16px;
+  padding-bottom: 5px;
+}
+
+.formacao-bloco {
+  margin-bottom: 24px;
+}
+
+.formacao-bloco h3 {
+  font-size: 20px;
+  color: #533e1a;
+  border-left: 4px solid #b48b31; /*cor nas subdiviçoes da formação*/
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+.competencias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.card-comp {
+  background-color: #f4f1ec;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;               /*card em si*/
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+
+.card-comp h4 {
+  font-size: 16px;    /*escrito dentro do card*/
+  color: #3e2f20;
+}
+
+.card-comp:hover {
+  transform: translateY(-10px);   /*pulinho do card*/
+}
+
+/* ------------------------------
+   Biografia / Frase Impacto
+------------------------------ */
+.foto {
+  max-width: 200px;
+  border-radius: 10px;
+  display: block;
+  margin: 16px auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+blockquote {
+  font-style: italic;
+  color: #3a2f1f;
+  font-size: 22px;
+  background-color: #f2e9dc;
+  border-left: 6px solid #3e2f20;
+  padding: 16px 24px;
+  margin: 32px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
+}
+
+blockquote:hover {
+  background-color: #ebd1b7;  /*animaçoes "passagens biblicas"*/
+}
+
+/* ------------------------------
+   Visão Estratégica
+------------------------------ */
+#visao {
+  background-color: #fffdf6;
+  border: 1px solid #e3d2aa;
+  padding: 32px;
+  border-radius: 10px;
+}
+
+#visao p {
+  font-size: 18px;
+  color: #4a3a2b;
+  line-height: 1.8;
+}
+
+/* ------------------------------
+   Portfólio
+------------------------------ */
+.projetos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.card-projeto {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #fff;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.card-projeto:hover {
+  border-color: #b48b31;
+  transform: translateY(-5px);  
+} 
+/*animaçao retangulos projetos*/
+
+.card-projeto h3 {
+  font-size: 20px;
+  color: #3b2a1a;
+  margin-top: 16px;
+}
+
+.card-projeto p {
+  font-size: 16px;
+  color: #5a4a3a;
+  margin-top: 8px;
+}
+
+.card-projeto i {
+  font-size: 40px;
+  color: #b48b31;
+}
+
+/* ------------------------------
+   Contatos
+------------------------------ */
+.contatos-section {
+  background-color: #f2e9dc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contatos-section h2 {
+  font-size: 40px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.contatos-section p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-contato {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #3e2f20;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease background-color 0.3 ease;
+}
+.btn-contato:hover {
+  transform: scale(1.05);
+  background-color: #5a4026;
+} /*botao cresce contatos
+
+/* ------------------------------
+   Rodapé
+------------------------------ */
+footer {
+  background-color: #3e2f20;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* ------------------------------
+   Responsivo
+------------------------------ */
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  
+  }
+
+  main {
+    padding: 16px;
+  }
+}
